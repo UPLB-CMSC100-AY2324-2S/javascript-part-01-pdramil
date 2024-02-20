@@ -65,7 +65,12 @@ function stoT1FakerrePassword(name, password1, password2) {
 	console.log('name:', user.name, '\nnewpassword:', user.newpassword);
 }
 
+//final test cases
+console.log('Test Case 1');
 storePassword('John', 'Pass1234', 'Pass1234');					//true; passwords validated
-storePassword('John', 'Pass123', 'Pass12345');					//false; passwords do not match				
+console.log('\nTest Case 2');
+storePassword('John', 'Pass123', 'Pass12345');					//false; passwords do not match
+console.log('\nTest Case 3');					
 storePassword('Precious', 'Precious1004', 'Precious1004');		//true; passwords validated
+console.log('\nTest Case 4');
 storePassword('Faker', 'T1Faker', 'T1Faker');					//false; passwords do not have 8 char
